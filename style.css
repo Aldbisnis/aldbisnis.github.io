@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap");
+
+:root {
+  --navy: #0b2545;
+  --orange: #ff8a3d;
+  --sky: #c9d6e8;
+  --ink: #e9eef6;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  background: var(--navy);
+  color: var(--ink);
+  line-height: 1.65;
+}
+a { color: var(--orange); }
+header, main, footer { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+header { padding-top: 40px; display: flex; align-items: center; gap: 12px; }
+.logo { font-weight: 700; font-size: 22px; letter-spacing: -0.02em; text-decoration: none; color: var(--ink); }
+.logo span { color: var(--orange); }
+main { padding-top: 32px; padding-bottom: 48px; }
+h1 { font-size: clamp(32px, 6vw, 52px); line-height: 1.1; letter-spacing: -0.03em; margin: 0 0 16px; }
+h2 { font-size: 20px; margin: 36px 0 8px; color: var(--sky); }
+p, li { color: #cdd7e6; }
+.lead { font-size: 19px; color: var(--ink); }
+.btn {
+  display: inline-block; margin-top: 20px; padding: 12px 20px; border-radius: 10px;
+  background: var(--orange); color: var(--navy); font-weight: 700; text-decoration: none;
+}
+.muted { font-size: 14px; color: #8fa3bf; }
+footer { border-top: 1px solid #1f3a60; padding-top: 20px; padding-bottom: 40px; font-size: 14px; color: #8fa3bf; }
+footer a { margin-right: 16px; }
